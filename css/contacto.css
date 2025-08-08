@@ -1,0 +1,30 @@
+:root {
+  --primary:   #03254c;
+  --secondary: #1167b1;
+  --tertiary:  #187bcd;
+  --accent:    #2a9df4;
+  --light:     #d0efff;
+}
+
+#menu {
+  background-color: var(--primary);
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo img {
+    margin-left: 4px;
+}
+
+#logo a {
+    color: white;
+    font-weight: bold;
+    margin-top: -20px;
+
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
