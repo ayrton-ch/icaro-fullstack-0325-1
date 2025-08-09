@@ -4,10 +4,25 @@
   --tertiary:  #187bcd;
   --accent:    #2a9df4;
   --light:     #d0efff;
+  --white:     #ffffff;
+}
+
+* {
+   
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+
+
 }
 
 #menu {
-  background-color: var(--primary);
+  background-color: var(--white);
+
 }
 
 #logo {
@@ -20,7 +35,7 @@
 }
 
 #logo a {
-    color: white;
+ 
     font-weight: bold;
     margin-top: -20px;
 
@@ -28,3 +43,66 @@
     text-transform: uppercase;
 
 }
+
+
+
+#banner {
+   width: 100%;
+   object-fit: contain;
+ 
+    
+}
+
+.navigation {
+    flex-wrap: wrap;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2% 0;
+    
+}
+
+.flex .flex-item {
+    width: 22%;
+    margin: auto 1%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+    #img-card {
+       height: 12rem;
+        padding: 2rem; 
+        object-fit: contain;
+
+    }
+
+/* celular */
+@media screen and (max-width: 425px) {
+   .flex .flex-item { width: 44%; }
+    
+   #img-card {
+    height: 9rem;
+    padding: 1rem; 
+    object-fit: contain;
+  }
+
+  #banner {
+   width: auto;
+   height: 120px;
+   object-fit: contain;
+  }
+
+ /* Evita scroll lateral accidental */
+  html, body {
+    overflow-x: hidden;
+  }
+
+
+}
+
