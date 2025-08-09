@@ -4,7 +4,7 @@
 
 # ICARO FULL STACK - 0325
 
-Tienda e-commerce
+Tienda e-commerce de una ferreteria
 
 # Introducción
 Es una tienda online de ferretería donde podés comprar herramientas de manera sencilla y segura.
