@@ -19,6 +19,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+/* menu */
 #menu {
   background-color: var(--white);
 
@@ -34,27 +36,26 @@ body {
 }
 
 #logo a {
- 
     font-weight: bold;
     margin-top: -20px;
-
     font-size: 12px;
     text-transform: uppercase;
-
 }
-
-
 
 #banner {
    width: 100%;
    object-fit: contain;
- 
-    
 }
 
-.navigation {
-    flex-wrap: wrap;
-}
+
+
+
+
+
+
+
+
+
 
 
 .flex {
@@ -92,11 +93,11 @@ body {
     margin-top: 10px;
 }
 
-    #img-card {
+ #img-card {
        height: 12rem;
         padding: 1rem; 
         object-fit: contain;
-
+       
     }
 
 #detalle-card {
@@ -109,6 +110,10 @@ body {
     font-size: 1.2rem;
     margin-left: 8px;
 }
+
+
+
+
 
 /* celular */
 @media screen and (max-width: 425px) {
@@ -163,6 +168,7 @@ body {
 
 /* Centrar menu */
 @media screen and (min-width: 425px) {
+  /* menu */
   #navbarNav {
     position: absolute;
     left: 50%;

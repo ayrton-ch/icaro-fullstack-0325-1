@@ -4,10 +4,26 @@
   --tertiary:  #187bcd;
   --accent:    #2a9df4;
   --light:     #d0efff;
+  --white:     #ffffff;
+  --white-gray: #f8f9fa;
 }
 
+* {
+   
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+
+/* menu */
 #menu {
-  background-color: var(--primary);
+  background-color: var(--white);
+
 }
 
 #logo {
@@ -20,11 +36,40 @@
 }
 
 #logo a {
-    color: white;
     font-weight: bold;
     margin-top: -20px;
-
     font-size: 12px;
     text-transform: uppercase;
+}
 
+#banner {
+   width: 100%;
+   object-fit: contain;
+}
+
+
+
+/* celular */
+@media screen and (max-width: 425px) {
+  #bienvenido {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+
+
+}
+
+/* Centrar menu */
+@media screen and (min-width: 425px) {
+  /* menu */
+  #navbarNav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
