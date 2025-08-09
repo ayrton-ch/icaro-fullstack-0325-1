@@ -10,7 +10,7 @@
 <body>
      <nav id="menu" class="navbar navbar-expand-sm navbar-white">
         <div class="container-fluid">
-            <div id="logo" class="d-flex align-items-center ">
+            <div id="logo" class="d-flex align-items-center ms-lg-5">
                 <img src="img/logo.png"  style="width: 85px; height: 65px; ">
                
             </div>
@@ -21,7 +21,7 @@
             </button>
 
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div  id="navbarNav" class="collapse navbar-collapse justify-content-center ms-lg-auto ">
                 <ul class="navbar-nav fw-bold">
                     
                     <li class="nav-item">
@@ -36,7 +36,7 @@
 
                     <li class="nav-item d-flex align-items-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(43, 43, 43);" class="justify-content-center mb-1 me-1 me-sm-0" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
- <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>                        </svg>
+                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>                        </svg>
                         
                         <a class="nav-link" href="detalle.html">Tienda</a>
  
@@ -54,16 +54,24 @@
 
         <aside>
             <img id="banner" src="img/banner.png" >
+            <div class="text-center bg-black py-2">
+                <p id="bienvenido" class="text-white mb-0 py-3 fw-bold ">
+                    ¡Bienvenido a Ferreteria! Tu tienda en línea para herramientas y materiales de construcción de alta calidad.
+                </p>
+            </div>
         </aside>
+
 
          <div class="flex">
             <section class="flex-item">
-                                <div class="card" >
+                    <div class="card" >
                     <img id="img-card" src="img/p1.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text text-truncate">Descripción breve del producto 1.</p>
-                        <a href="detalle.html" class="btn btn-primary">Comprar</a>
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Llave de Impacto</h5>
+                        <p class="card-text">Herramienta sin cables con motor de alto torque, perfecta para aflojar y ajustar pernos o tuercas con rapidez. Incluye batería recargable y diseño ergonómico para uso prolongado.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar 
+                            <a id="flex-precio" >$150.00</a>
+                        </a>
                     </div>
                 </div>
                 </section>
@@ -71,77 +79,100 @@
                 
             </section>
             <section class="flex-item" >
-                 <div class="card" >
+                      <div class="card" >
                     <img id="img-card" src="img/p2.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Truper Juego de Dados y Puntas</h5>
+                        <p class="card-text">Set completo con dados, puntas y accesorios de acero al cromo vanadio para mayor durabilidad. Viene en estuche organizado, ideal para trabajos mecánicos y de mantenimiento.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$25.00</a>
+                        </a>
                     </div>
                 </div>
             </section>
             <section class="flex-item">
 
-                                <div class="card" >
-                    <img id="img-card" src="img/p3.webp" class="card-img-top ">
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                      <div class="card" >
+                    <img id="img-card" src="img/p3.webp" class="card-img-top " >
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Kit de Herramientas Básico 17 Piezas</h5>
+                        <p class="card-text">Incluye herramientas esenciales como martillo, destornilladores, pinzas, cinta métrica y llave ajustable. Perfecto para reparaciones domésticas y proyectos simples.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$30.00</a>
+                        </a>
                     </div>
                 </div>
 
             </section>
             <section class="flex-item">
-                             <div class="card" >
+
+                      <div class="card" >
                     <img id="img-card" src="img/p4.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Daewoo Combo Taladro Percutor + Amoladora Angular</h5>
+                        <p class="card-text">Taladro percutor potente para perforar madera, metal y mampostería, acompañado de amoladora angular para cortes y desbastes. Ideal para trabajos de construcción y bricolaje.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$85.00</a>
+                        </a>
                     </div>
                 </div>
+
             </section>
             <section class="flex-item">
-                                      <div class="card" >
-                    <img id="img-card" src="img/p4.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                
+                      <div class="card" >
+                    <img id="img-card" src="img/p5.webp" class="card-img-top " >
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Bahco Destornillador Plano</h5>
+                        <p class="card-text">Destornillador de alta calidad con mango bicolor antideslizante y punta plana resistente, diseñado para trabajos de precisión y uso profesional.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$15.00</a>
+                        </a>
                     </div>
                 </div>
+
             </section>
             <section class="flex-item">
-                                      <div class="card" >
-                    <img id="img-card" src="img/p4.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+
+                      <div class="card" >
+                    <img id="img-card" src="img/p6.webp" class="card-img-top " >
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Pretul Juego de 3 Pinzas</h5>
+                        <p class="card-text">Set con pinza de electricista 8", punta larga 6" y corte diagonal 6"; mangos antideslizantes.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$14.00</a>
+                        </a>
                     </div>
                 </div>
+
             </section>
              <section class="flex-item">
-                                      <div class="card" >
-                    <img id="img-card" src="img/p4.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text 
-                        ">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+
+                      <div class="card" >
+                    <img id="img-card" src="img/p7.webp" class="card-img-top " >
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Ingco Industrial Juego de Llaves Combinadas (8 pzs)</h5>
+                        <p class="card-text">Llaves combinadas (abierta + estrella) en portallaves; medidas escalonadas para mecánica general.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$28.00</a>
+                        </a>
                     </div>
                 </div>
+
             </section>
              <section class="flex-item">
-                                      <div class="card" >
-                    <img id="img-card" src="img/p4.webp" class="card-img-top " >
-                    <div class="card-body ">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción breve del producto 1.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+
+                      <div class="card" >
+                    <img id="img-card" src="img/p8.webp" class="card-img-top " >
+                    <div id="detalle-card"class="card-body rounded-bottom-3"> 
+                        <h5 class="card-title">Varilla Corrugada de Acero (rebar)</h5>
+                        <p class="card-text">Barras estriadas para refuerzo de hormigón; alta adherencia y resistencia para construcción.</p>
+                        <a id="flex-comprar" href="detalle.html" class="btn btn-primary">Comprar
+                            <a id="flex-precio" >$3.00</a>
+                        </a>
                     </div>
                 </div>
+
             </section>
     </div>
 
