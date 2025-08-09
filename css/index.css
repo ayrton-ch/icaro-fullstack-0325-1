@@ -48,16 +48,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .flex {
     display: flex;
     justify-content: space-evenly;
@@ -67,6 +57,8 @@ body {
     margin-right: 10%;
     
 }
+
+
 
 .flex h5 {
   display: -webkit-box;
@@ -105,14 +97,21 @@ body {
 }
 
 #flex-precio {
+    display: flex;
     font-weight: bold;
     color: var(--secondary);
     font-size: 1.2rem;
-    margin-left: 8px;
+    margin-left: 10px;
+    align-items: center;
+    gap: 8px; 
+    margin-left: 0;
+   
 }
 
-
-
+#flex-comprar:hover{
+  transform: scale(1.06) !important;;
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.15) !important;;
+}
 
 
 /* celular */
@@ -124,6 +123,7 @@ body {
 
   }
 
+
 #flex-comprar {
     display: flex;
     justify-content: center;
@@ -131,12 +131,8 @@ body {
     gap: 8px; 
 }
 
-#flex-precio {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px; 
-}
+
+
 
 
   .flex {

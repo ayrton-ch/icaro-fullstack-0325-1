@@ -72,7 +72,7 @@ body {
 .detalle-grid {
   display: grid;
   min-height: 300px;
-  grid-template-rows: 50px 1fr  ;
+  grid-template-rows: 50px 70px 1fr ;
 
 }
 
@@ -124,3 +124,13 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
+/* desktop lg personalizado */
+@media (min-width:1200px){
+  /* Márgenes totales */
+  .m-xl-8  { margin: 3rem !important; }
+  /* Márgenes horizontales */
+  .mx-xl-7 { margin-left: 12rem !important; margin-right: 12rem !important; }
+
+}
+
