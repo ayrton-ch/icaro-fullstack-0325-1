@@ -1,126 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/contacto.css">
-</head>
-<body>
-     <nav id="menu" class="navbar navbar-expand-sm navbar-white">
-        <div class="container-fluid">
-            <div id="logo" class="d-flex align-items-center ms-lg-5">
-                <img src="img/logo.png"  style="width: 85px; height: 65px; ">
-               
-            </div>
-            
-           
-            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div  id="navbarNav" class="collapse navbar-collapse justify-content-center ms-lg-auto ">
-                <ul class="navbar-nav fw-bold">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contenido.html">Contenido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-md-2 active" href="contacto.html">Contacto</a>
-                    </li>
-
-             
-
-                </ul>
-            </div>
-
-
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <nav id="menu" class="navbar navbar-expand-sm navbar-white">
+      <div class="container-fluid">
+        <div id="logo" class="d-flex align-items-center ms-lg-5">
+          <img src="img/logo.png" style="width: 85px; height: 65px" />
         </div>
-                    
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          id="navbarNav"
+          class="collapse navbar-collapse justify-content-center ms-lg-auto"
+        >
+          <ul class="navbar-nav fw-bold">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contenido.html">Contenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-md-2 active" href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
+      <aside>
+        <img id="banner" src="img/banner.png" />
+        <div class="text-center bg-black py-2">
+          <p id="bienvenido" class="text-white mb-0 py-3 fw-bold">
+            ¡Bienvenido a Ferreteria! Tu tienda en línea para herramientas y
+            materiales de construcción de alta calidad.
+          </p>
+        </div>
+      </aside>
 
-        <aside>
-            <img id="banner" src="img/banner.png" >
-            <div class="text-center bg-black py-2">
-                <p id="bienvenido" class="text-white mb-0 py-3 fw-bold ">
-                    ¡Bienvenido a Ferreteria! Tu tienda en línea para herramientas y materiales de construcción de alta calidad.
-                </p>
-            </div>
-        </aside>
+      <div class="container-ventana px-2 my-2 px-sm- my-sm-2">
+        <div class="row justify-content-center">
+          <div>
+            <div
+              id="formulario"
+              class="card border-0 container my-2 my-sm-5 col-xl-10 w-auto p-0 rounded-3 shadow-lg overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6 d-none d-sm-block bg-image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="img-fluid bi bi-envelope"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="col-sm-6 p-4">
+                    <div class="text-center">
+                      <div class="h3 fw-light">Contáctanos vía email</div>
+                      <p class="mb-4 text-muted">
+                        Si tienes alguna pregunta o necesitas más información,
+                        no dudes en contactarnos. Estamos aquí para ayudarte.
+                      </p>
+                    </div>
 
+                    <form id="contactForm">
+                      <div class="form-floating mb-3 rounded-4">
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="Name"
+                          data-sb-validations="required"
+                        />
+                        <label for="name">Nombre completo</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="name:required"
+                        >
+                          El nombre completo es obligatorio.
+                        </div>
+                      </div>
 
-    <div class="container-fluid px-5 my-5 ">
-  <div class="row justify-content-center">
-    <div class="col-xl-10">
-      <div id="formulario" class="card border-0 rounded-3 shadow-lg overflow-hidden">
-        <div class="card-body p-0">
-          <div class="row g-0">
-            <div class="col-sm-6 d-none d-sm-block bg-image">
-                <img src="img/inbox.jpg" class="img-fluid rounded-start" style="width: 100%; height: 100%;" alt="Contacto">
-            </div>
-            <div class="col-sm-6 p-4">
-              <div class="text-center">
-                <div class="h3 fw-light">
-                    Contacto
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="emailAddress"
+                          type="email"
+                          placeholder="Email Address"
+                          data-sb-validations="required,email"
+                        />
+                        <label for="emailAddress">Correo electrónico</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:required"
+                        >
+                          El correo electrónico es obligatorio.
+                        </div>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:email"
+                        >
+                          El correo electrónico no es válido.
+                        </div>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          type="text"
+                          placeholder="Message"
+                          style="height: 10rem"
+                          data-sb-validations="required"
+                        ></textarea>
+                        <label for="message">Mensaje</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="message:required"
+                        >
+                          El mensaje es obligatorio.
+                        </div>
+                      </div>
+
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-primary btn-lg"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <p class="mb-4 text-muted">
-                    Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.
-                </p>
               </div>
+            </div>
 
-              <form id="contactForm" >
+            <div class="container my-5 col-xl-10 w-auto p-0">
+              <section class="mb-5 text-center shadow-lg rounded-3 p-0">
+                <div
+                  class="p-4 p-md-5 border rounded-3 bg-success"
+                  style="--bs-bg-opacity: 0.2"
+                >
+                  <div class="row g-3 align-items-center">
+                    <div class="col-md">
+                      <h3 class="h5 mb-2">Contáctanos via WhatsApp</h3>
+                      <p class="mb-0">
+                        Comunicate con nosotros a través de WhatsApp para
+                        recibir asistencia inmediata.
+                      </p>
+                    </div>
 
-                <!-- Name Input -->
-                <div class="form-floating mb-3">
-                  <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                  <label for="name">Nombre completo</label>
-                  <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                    <div
+                      class="col-md-auto d-flex gap-2 justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        onclick="window.open('https://api.whatsapp.com/send?phone=50935164576338&text=Hola%20Ferreteria,%20necesito%20ayuda%20con%20mi%20pedido.','_blank','noopener,noreferrer')"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-whatsapp"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                          ></path>
+                        </svg>
+                        Whatsapp
+                      </button>
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Email Input -->
-                <div class="form-floating mb-3">
-                  <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                  <label for="emailAddress">Correo electrónico</label>
-                  <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                  <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                </div>
-
-                <!-- Message Input -->
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                  <label for="message">Mensaje</label>
-                  <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                </div>
-
-                <!-- Submit button -->
-                <div class="d-grid">
-                  <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-                </div>
-              </form>
-
-
+              </section>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
     </main>
 
     <footer class="bg-primary text-center py-5">
-    <p class="mb-0 text-white">&copy; 2025 Ferreteria.</p>
+      <p class="mb-0 text-white">&copy; 2025 Ferreteria.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
