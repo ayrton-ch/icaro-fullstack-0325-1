@@ -1,54 +1,50 @@
 :root {
-  --primary:   #03254c;
+  --primary: #03254c;
   --secondary: #1167b1;
-  --tertiary:  #187bcd;
-  --accent:    #2a9df4;
-  --light:     #d0efff;
-  --white:     #ffffff;
+  --tertiary: #187bcd;
+  --accent: #2a9df4;
+  --light: #d0efff;
+  --white: #ffffff;
   --white-gray: #f8f9fa;
-  --black:     #000000;
+  --black: #000000;
   --black-gray: #343a40;
 }
 
 * {
-   
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: var(--white-gray);
-    font-family: Arial, sans-serif;
+  background-color: var(--white-gray);
+  font-family: Arial, sans-serif;
 }
-
 
 /* menu */
 #menu {
   background-color: var(--white);
-
 }
 
 #logo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo img {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 #logo a {
-    font-weight: bold;
-    margin-top: -20px;
-    font-size: 12px;
-    text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -20px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 #banner {
-   width: 100%;
-   object-fit: contain;
+  width: 100%;
+  object-fit: contain;
 }
-
 
 .container-grid {
   display: grid;
@@ -65,15 +61,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:5px 0px 0px 5px;
- 
+  border-radius: 5px 0px 0px 5px;
 }
 
 .detalle-grid {
   display: grid;
   min-height: 300px;
-  grid-template-rows: 50px 70px 1fr ;
-
+  grid-template-rows: 50px 70px 1fr;
 }
 
 .comprar-grid {
@@ -86,7 +80,6 @@ body {
 
 .text-span {
   color: var(--black-gray);
-
 }
 
 .text-precio {
@@ -95,23 +88,17 @@ body {
   font-size: 1.2rem;
 }
 
-
-
 /* celular */
 @media screen and (max-width: 425px) {
   #bienvenido {
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
-
   }
 
-.imagen-grid {
-  border-radius:5px 5px 0px 0px;
-
-}
-
-
+  .imagen-grid {
+    border-radius: 5px 5px 0px 0px;
+  }
 }
 
 /* Centrar menu */
@@ -126,11 +113,14 @@ body {
 }
 
 /* desktop lg personalizado */
-@media (min-width:1200px){
+@media (min-width: 1200px) {
   /* Márgenes totales */
-  .m-xl-8  { margin: 3rem !important; }
+  .m-xl-8 {
+    margin: 3rem !important;
+  }
   /* Márgenes horizontales */
-  .mx-xl-7 { margin-left: 12rem !important; margin-right: 12rem !important; }
-
+  .mx-xl-7 {
+    margin-left: 12rem !important;
+    margin-right: 12rem !important;
+  }
 }
-
