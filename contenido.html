@@ -1,65 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <title>Contenido</title>
-    <link rel="stylesheet" href="css/contenido.css">
-</head>
-<body>
-     <nav id="menu" class="navbar navbar-expand-sm navbar-white">
-        <div class="container-fluid">
-            <div id="logo" class="d-flex align-items-center ms-lg-5">
-                <img src="img/logo.png"  style="width: 85px; height: 65px; ">
-               
-            </div>
-            
-           
-            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div  id="navbarNav" class="collapse navbar-collapse justify-content-center ms-lg-auto ">
-                <ul class="navbar-nav fw-bold">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contenido.html">Contenido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-md-2" href="contacto.html">Contacto</a>
-                    </li>
-
-
-                </ul>
-            </div>
-
-
+    <link rel="stylesheet" href="css/contenido.css" />
+  </head>
+  <body>
+    <nav id="menu" class="navbar navbar-expand-sm navbar-white">
+      <div class="container-fluid">
+        <div id="logo" class="d-flex align-items-center ms-lg-5">
+          <img src="img/logo.png" style="width: 85px; height: 65px" />
         </div>
-                    
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          id="navbarNav"
+          class="collapse navbar-collapse justify-content-center ms-lg-auto"
+        >
+          <ul class="navbar-nav fw-bold">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contenido.html">Contenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-md-2" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
+      <aside>
+        <img id="banner" src="img/banner.png" />
+        <div id="banner-fondo" class="text-center py-2">
+          <p id="bienvenido" class="text-white mb-0 py-3 fw-bold">
+            Protegemos tus datos, aseguramos tus pagos y cuidamos tus envíos con
+            políticas claras y garantía oficial.
+          </p>
+        </div>
+      </aside>
 
-        <aside>
-            <img id="banner" src="img/banner.png" >
-            <div class="text-center bg-black py-2">
-                <p id="bienvenido" class="text-white mb-0 py-3 fw-bold ">
-                    ¡Bienvenido a Ferreteria! Tu tienda en línea para herramientas y materiales de construcción de alta calidad.
-                </p>
+      <div class="container my-4 my-md-5">
+        <section class="mb-5">
+          <h2 class="section-title h4 mb-3">Seguridad y confianza</h2>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="trust-badge">
+                <i class="bi bi-shield-lock"></i>
+                <div>
+                  <h6 class="mb-1">Conexión cifrada</h6>
+                  <p class="mb-0 small">
+                    Navegación y checkout bajo TLS/SSL. Tus datos viajan siempre
+                    protegidos.
+                  </p>
+                </div>
+              </div>
             </div>
-        </aside>
+            <div class="col-md-6 col-lg-4">
+              <div class="trust-badge">
+                <i class="bi bi-credit-card-2-front"></i>
+                <div>
+                  <h6 class="mb-1">Pagos seguros</h6>
+                  <p class="mb-0 small">
+                    Procesados por pasarelas certificadas. No almacenamos datos
+                    de tarjeta.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="trust-badge">
+                <i class="bi bi-truck"></i>
+                <div>
+                  <h6 class="mb-1">Envíos asegurados</h6>
+                  <p class="mb-0 small">
+                    Seguimiento online y cobertura por pérdida o daño hasta la
+                    entrega.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="mb-5">
+          <h2 class="section-title h4 mb-3">Políticas y garantías</h2>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <div class="card policy-card">
+                <div class="card-body">
+                  <h6 class="card-title">Cambios y devoluciones</h6>
+                  <p class="card-text small">
+                    Tenés <strong>30 días</strong> para cambios/devoluciones en
+                    productos sin uso y con empaque original.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card policy-card">
+                <div class="card-body">
+                  <h6 class="card-title">Garantía oficial</h6>
+                  <p class="card-text small">
+                    Todos los productos cuentan con garantía del fabricante. Te
+                    asistimos en todo el proceso.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card policy-card">
+                <div class="card-body">
+                  <h6 class="card-title">Privacidad</h6>
+                  <p class="card-text small">
+                    Usamos tus datos solo para procesar pedidos y soporte. Podés
+                    solicitar su eliminación.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card policy-card">
+                <div class="card-body">
+                  <h6 class="card-title">Medios de pago</h6>
+                  <p class="card-text small">
+                    Tarjetas y medios locales a través de pasarelas
+                    certificadas. Comprobante inmediato por email.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <h2 class="section-title h4 mb-3">Preguntas frecuentes</h2>
+          <div class="accordion" id="faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a1"
+                >
+                  ¿Cómo sé que mi pago es seguro?
+                </button>
+              </h2>
+              <div
+                id="a1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Usamos pasarelas certificadas y conexión cifrada. Nunca
+                  almacenamos datos sensibles de tu tarjeta.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="q2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a2"
+                >
+                  ¿Cuándo llega mi pedido?
+                </button>
+              </h2>
+              <div
+                id="a2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Verás una fecha estimada en el checkout y un número de
+                  seguimiento para monitorear el envío.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="q3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a3"
+                >
+                  ¿Cómo gestiono un cambio o devolución?
+                </button>
+              </h2>
+              <div
+                id="a3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  Escribinos y generamos la etiqueta de devolución. Tenés 30
+                  días desde la entrega.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5 text-center bg-light">
+          <div class="p-4 p-md-5 border rounded-3">
+            <div class="row g-3 align-items-center">
+              <div class="col-md">
+                <h3 class="h5 mb-2">¿Necesitás ayuda?</h3>
+                <p class="mb-0">
+                  Nuestro equipo responde por WhatsApp y email en horarios
+                  hábiles. ¡Escribinos!
+                </p>
+              </div>
+
+              <div class="col-md-auto d-flex gap-2">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="window.location.href='contacto.html'"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                    />
+                  </svg>
+                  Atención al cliente
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="bg-primary text-center py-5">
-    <p class="mb-0 text-white">&copy; 2025 Ferreteria.</p>
+      <p class="mb-0 text-white">&copy; 2025 Ferreteria.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
