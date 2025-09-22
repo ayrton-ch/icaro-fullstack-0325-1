@@ -7,6 +7,8 @@ async function cargarProductos() {
   return await resp.json();
 }
 cargarProductos().then((json) => {
+  const productos = [];
+
   cont.innerHTML = json
     .map(
       (p, i) => `
@@ -19,7 +21,7 @@ cargarProductos().then((json) => {
                         
                           <a id="flex-precio" class="card-precio" >${p.precio}</a>
                     
-                        <a id="flex-comprar" class="btnAgregar${i} btn btn-primary">Agregar</a>
+                        <a id="flex-comprar"  class="btn btn-primary btn-agregar" data-index="${i}">Agregar</a>
                       
                     </div>
                 </div>
@@ -28,14 +30,13 @@ cargarProductos().then((json) => {
     )
     .join("");
 
-  const clickProductUno = document.querySelector(".btnAgregar0");
-  const clickProductDos = document.querySelector(".btnAgregar1");
-  const clickProductTres = document.querySelector(".btnAgregar2");
-  const clickProductCuatro = document.querySelector(".btnAgregar3");
-  const clickProductCinco = document.querySelector(".btnAgregar4");
-  const clickProductSeis = document.querySelector(".btnAgregar5");
-  const clickProductSiete = document.querySelector(".btnAgregar6");
-  const clickProductOcho = document.querySelector(".btnAgregar7");
+  cont.addEventListener("click", (e) => {
+    const btn = e.target.closest(".btn-agregar");
+    if (!btn) return;
+    const i = Number(btn.dataset.index);
+    const p = json[i];
+    agregarProductos(p);
+  });
 
   const comprar = document.querySelector("#comprar");
 
@@ -47,54 +48,16 @@ cargarProductos().then((json) => {
   function numeroShop() {
     const cartContador = document.querySelector("#cartContador");
     cartContador.classList.remove("d-none");
-
     cartContador.innerText = productos.length;
   }
 
-  const productos = [];
-
-  const listaProductos = document.querySelectorAll(
-    ".card-title, .card-text, .card-precio, .card-img"
-  );
-
-  clickProductUno.addEventListener("click", function () {
-    agregarProductos(0, 1, 2, 3);
-  });
-
-  clickProductDos.addEventListener("click", function () {
-    agregarProductos(4, 5, 6, 7);
-  });
-
-  clickProductTres.addEventListener("click", function () {
-    agregarProductos(8, 9, 10, 11);
-  });
-
-  clickProductCuatro.addEventListener("click", function () {
-    agregarProductos(12, 13, 14, 15);
-  });
-
-  clickProductCinco.addEventListener("click", function () {
-    agregarProductos(16, 17, 18, 19);
-  });
-
-  clickProductSeis.addEventListener("click", function () {
-    agregarProductos(20, 21, 22, 23);
-  });
-
-  clickProductSiete.addEventListener("click", function () {
-    agregarProductos(24, 25, 26, 27);
-  });
-
-  clickProductOcho.addEventListener("click", function () {
-    agregarProductos(28, 29, 30, 31);
-  });
-
   function agregarProductos(lista) {
+    console.log("click en agregar: " + lista);
     const dato = {
-      img: listaProductos[lista].getAttribute("src"),
-      titulo: listaProductos[lista + 1].innerText,
-      detalle: listaProductos[lista + 2].innerText,
-      precio: listaProductos[lista + 3].innerText,
+      img: lista.img,
+      titulo: lista.titulo,
+      detalle: lista.detalle,
+      precio: lista.precio,
     };
 
     productos.push(dato);
