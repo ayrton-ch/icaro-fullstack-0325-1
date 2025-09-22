@@ -1,4 +1,5 @@
-const clickProduct = document.getElementById("flex-comprar");
+const clickProductUno = document.querySelector(".btnAgregarUno");
+const clickProductDos = document.querySelector(".btnAgregarDos");
 
 function sumarNumeroShop(num) {
   const cartContador = document.querySelector("#cartContador");
@@ -8,9 +9,26 @@ function sumarNumeroShop(num) {
   cartContador.innerText = numero;
 }
 
-clickProduct.addEventListener("click", function () {
+const listaProductos = document.querySelectorAll(
+  ".card-title, .card-text, .card-precio"
+);
+
+clickProductUno.addEventListener("click", function () {
   sumarNumeroShop(1);
 
+  console.log(listaProductos[0].innerText);
+  console.log(listaProductos[1].innerText);
+  console.log(listaProductos[2].innerText);
+
+  agregarProductos();
+});
+
+clickProductDos.addEventListener("click", function () {
+  sumarNumeroShop(1);
+
+  console.log(listaProductos[3].innerText);
+  console.log(listaProductos[4].innerText);
+  console.log(listaProductos[5].innerText);
   agregarProductos();
 });
 
