@@ -6,7 +6,7 @@
 
 Tienda e-commerce de una ferreteria
 
-# Introducción
+# Introducción Modulo - 1
 
 Es una tienda online de ferretería donde podés comprar herramientas de manera sencilla y segura.
 
@@ -26,3 +26,11 @@ Es una tienda online de ferretería donde podés comprar herramientas de manera 
 - **detalle.html**: Página del producto con su descripción y opción para **realizar** la compra.
 - **contacto.html**: Sección para que el cliente se comunique con el vendedor ante dudas o consultas.
 - **contenido.html**: Página que explica por qué nuestra tienda es segura para comprar, detallando políticas y garantías.
+
+# Introducción Modulo - 2
+
+- **calculadora basica**: Agregar un boton de agregar para que lo sume al carrito y hacer un array lista de los producto y que lo mande usando dom al pagina de comprar y que muestre los producto que quiero compra que haga la suma de todo lso producto mas el envio o sin el envio.
+
+- **lista de tarea**: quiero que a darle me gusta un producto se guarde una lista donde el usuario pueda agregar o eliminar o que se marque como comprado el producto
+
+- **galeria de imagen**: al ver el producto tenga una galeria de fotos
