@@ -4,7 +4,7 @@
   --tertiary: #187bcd;
   --accent: #2a9df4;
   --light: #d0efff;
-  --light-gray: #dbe6f1;
+  --light-gray: #ebf0f5;
   --white: #ffffff;
   --white-gray: #f8f9fa;
 }
@@ -87,24 +87,40 @@ body {
 }
 
 #img-card {
-  height: 12rem;
+  height: 6rem;
+  width: 30%;
   padding: 1rem;
   object-fit: contain;
 }
 
 #detalle-card {
+  width: 100%;
+  align-content: center;
   background-color: var(--light-gray);
 }
 
 #flex-precio {
+  width: 20%;
   display: flex;
   font-weight: bold;
   color: var(--secondary);
   font-size: 1.2rem;
   margin-left: 10px;
   align-items: center;
+  text-align: center;
   gap: 8px;
-  margin-left: 0;
+}
+
+#flex-eliminar {
+  width: 15%;
+  height: auto;
+  display: flex;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin-left: 10px;
+
+  align-items: center;
+  text-align: center;
 }
 
 #flex-comprar:hover {
