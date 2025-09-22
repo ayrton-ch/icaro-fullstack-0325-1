@@ -7,6 +7,13 @@ const clickProductSeis = document.querySelector(".btnAgregarSeis");
 const clickProductSiete = document.querySelector(".btnAgregarSiete");
 const clickProductOcho = document.querySelector(".btnAgregarOcho");
 
+const comprar = document.querySelector("#comprar");
+
+comprar.addEventListener("click", function () {
+  console.log("click en comprar");
+  window.location.href = "comprar.html";
+});
+
 function numeroShop() {
   const cartContador = document.querySelector("#cartContador");
   cartContador.classList.remove("d-none");
