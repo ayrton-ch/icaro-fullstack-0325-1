@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--light-gray);
   font-family: Arial, sans-serif;
 }
 
@@ -77,6 +77,18 @@ body {
   margin-top: 10px;
 }
 
+#flex-compra {
+  margin: auto;
+  background-color: white;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 10%;
+  border-radius: 8px;
+  padding: 2%;
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -109,6 +121,28 @@ body {
   align-items: center;
   text-align: center;
   gap: 8px;
+}
+
+#form-check-input {
+  width: auto;
+  display: flex;
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin-left: 10px;
+  gap: 8px;
+}
+
+#checkBoton {
+  width: 15%;
+  height: auto;
+  display: flex;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin-left: 10px;
+
+  align-items: center;
+  text-align: center;
 }
 
 #flex-eliminar {
