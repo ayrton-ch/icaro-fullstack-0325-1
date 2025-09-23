@@ -41,8 +41,22 @@ cargarProductos().then((json) => {
   const comprar = document.querySelector("#comprar");
 
   comprar.addEventListener("click", function () {
-    console.log("click en comprar");
-    window.location.href = "comprar.html";
+    let acomodar = productos;
+    const norm = (s) => s.trim().toLowerCase();
+    //parte del este codigo tuve que buscar por internet como obtener los datos repetidos para poder ponerle la cantidad de producto y multiplicar el precio
+    acomodar = Object.values(
+      acomodar.reduce((acc, cur) => {
+        const k = norm(cur.titulo);
+        (acc[k] ??= { ...cur, cantidad: 0, titulo: cur.titulo }).cantidad++;
+        //aca multiplica el precio obtenindo el dato por el la posicion de la k
+        acc[k].precio = `$${Number(cur.precio.slice(1)) * acc[k].cantidad}.00`;
+        return acc;
+      }, {})
+    );
+    console.log("click en comprar" + JSON.stringify({ acomodar }));
+    window.name = JSON.stringify({ acomodar });
+
+    location.href = "comprar.html";
   });
 
   function numeroShop() {
