@@ -88,6 +88,23 @@ body {
   font-size: 1.2rem;
 }
 
+.galeria-grid {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-grid {
+  width: auto;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #03254c;
+}
+
 /* celular */
 @media screen and (max-width: 425px) {
   #bienvenido {
