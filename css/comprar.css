@@ -108,7 +108,6 @@ body {
 #detalle-card {
   width: 100%;
   align-content: center;
-  background-color: var(--light-gray);
 }
 
 #flex-precio {
