@@ -32,10 +32,26 @@ cargarProductos().then((json) => {
 
   cont.addEventListener("click", (e) => {
     const btn = e.target.closest(".btn-agregar");
-    if (!btn) return;
-    const i = Number(btn.dataset.index);
-    const p = json[i];
-    agregarProductos(p);
+    if (btn) {
+      //agregar al carrito
+      const i = Number(btn.dataset.index);
+      const p = json[i];
+      agregarProductos(p);
+      e.stopPropagation();
+      return;
+    }
+
+    const flexItem = e.target.closest(".flex-item");
+    if (flexItem) {
+      //ir al la ventana de detalle.html
+      const i = Number(flexItem.dataset.index);
+      const p = json[i];
+      console.log("click en detalle: " + JSON.stringify({ p }));
+      window.name = JSON.stringify({ p });
+      location.href = "detalle.html";
+      e.stopPropagation();
+      return;
+    }
   });
 
   const comprar = document.querySelector("#comprar");
