@@ -1,3 +1,9 @@
+const cont = document.querySelector("#listaCompras");
+const subtotal = document.querySelector("#subtotal");
+const envio = document.querySelector("#envio");
+const total = document.querySelector("#total");
+const envioSwitch = document.querySelector("#envioSwitch");
+
 let datos = {};
 try {
   datos = JSON.parse(window.name);
@@ -8,10 +14,6 @@ let producto = datos.acomodar;
 
 console.log("Producto repetido:  " + producto.cantidad);
 
-console.log("Producto recibido:", producto);
-
-const cont = document.querySelector("#listaCompras");
-
 cont.innerHTML = producto
   .map(
     (p, i) => `
@@ -21,11 +23,7 @@ cont.innerHTML = producto
                     <div class="card" >
                     <img id="img-card" src="${p.img}" class="card-img card-img-top " >
                     <div id="detalle-card"  class="card-body "> 
-                        <h4 class="card-title">${p.titulo}</h4>
-                        
-                        
-                    
-       
+                        <h5>${p.titulo}</h5>
                     </div>
 
                     <div class="d-inline-flex align-items-center gap-3 mt-2 mx-5 mb-2">
@@ -129,6 +127,7 @@ cont.addEventListener("click", (e) => {
 
 function guardarProductos() {
   window.name = JSON.stringify({ acomodar: producto });
+  calcularTotales(envioSwitch.checked);
 }
 
 function editarDatosProductos(index, num, dinero) {
@@ -140,4 +139,39 @@ function editarDatosProductos(index, num, dinero) {
 function eliminarDatosProductos(index) {
   producto.splice(index, 1);
   console.log("Producto eliminado:", producto);
+  calcularTotales(envioSwitch.checked);
 }
+
+let subTotalCalc = 0;
+
+envioSwitch.addEventListener("change", () => {
+  if (producto.length === 0) {
+    alert("No hay productos en el carrito. vuelva a agregar productos.");
+    envioSwitch.checked = false;
+    return;
+  }
+  calcularTotales(envioSwitch.checked);
+});
+
+function calcularTotales(envioActivo) {
+  if (producto.length === 0) {
+    subtotal.textContent = `$0.00`;
+    envio.textContent = `$0.00`;
+    total.textContent = `$0.00`;
+    return;
+  }
+
+  subTotalCalc = 0;
+  let envioCalc = envioActivo ? 10 : 0;
+  producto.forEach((p) => {
+    const price = Number(p.precio.replace(/[^0-9.]/g, ""));
+    subTotalCalc += price;
+  });
+
+  //si el subtotal es 0, el envio debe ser 0
+  if (subTotalCalc !== 0) {
+    subtotal.textContent = `$${subTotalCalc.toFixed(2)}`;
+    total.textContent = `$${(subTotalCalc + envioCalc).toFixed(2)}`;
+  }
+}
+calcularTotales(envioSwitch.checked);
