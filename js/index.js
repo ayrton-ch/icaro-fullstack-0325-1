@@ -1,3 +1,8 @@
+const logo = document.querySelector("#logo");
+logo.addEventListener("click", function () {
+  location.href = "index.html";
+});
+
 const cont = document.querySelector("#lista");
 
 async function cargarProductos() {
