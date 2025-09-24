@@ -3,7 +3,7 @@
   --secondary: #1167b1;
   --tertiary: #187bcd;
   --accent: #2a9df4;
-  --light: #d0efff;
+  --accent-light: #c0e3ff;
   --light-gray: #dbe6f1;
   --white: #ffffff;
   --white-gray: #f8f9fa;
@@ -84,7 +84,7 @@ body {
 }
 
 #detalle-card {
-  background-color: var(--light-gray);
+  background-color: var(--accent-light);
 }
 
 #flex-precio {
