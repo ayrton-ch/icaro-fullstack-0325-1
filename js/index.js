@@ -17,7 +17,7 @@ cargarProductos().then((json) => {
   cont.innerHTML = json
     .map(
       (p, i) => `
-          <section class="flex-item shadow-lg" data-index="${i}" >
+          <section  class="flex-item shadow-lg" data-index="${i}" >
                     <div class="card" >
                     <img id="img-card" src="${p.img}" class="card-img card-img-top " >
                     <div id="detalle-card"  class="card-body rounded-bottom-3"> 
@@ -38,12 +38,12 @@ cargarProductos().then((json) => {
   cont.addEventListener("click", (e) => {
     const btn = e.target.closest(".btn-agregar");
 
-    btn.classList.toggle("btn-secondary");
-    setTimeout(() => {
-      btn.classList.toggle("btn-secondary");
-    }, 1000);
-
     if (btn) {
+      btn.classList.toggle("btn-secondary");
+      setTimeout(() => {
+        btn.classList.toggle("btn-secondary");
+      }, 1000);
+
       //agregar al carrito
       const i = Number(btn.dataset.index);
       const p = json[i];
