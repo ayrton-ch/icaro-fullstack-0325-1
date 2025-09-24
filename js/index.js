@@ -37,6 +37,12 @@ cargarProductos().then((json) => {
 
   cont.addEventListener("click", (e) => {
     const btn = e.target.closest(".btn-agregar");
+
+    btn.classList.toggle("btn-secondary");
+    setTimeout(() => {
+      btn.classList.toggle("btn-secondary");
+    }, 1000);
+
     if (btn) {
       //agregar al carrito
       const i = Number(btn.dataset.index);
