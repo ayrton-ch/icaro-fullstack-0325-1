@@ -8,6 +8,7 @@
       <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="css/comprar.css">
       <script src="js/comprar.js" defer></script>
+    
    </head>
    <body>
       <nav id="menu" class="navbar navbar-expand-sm navbar-white">
@@ -98,15 +99,38 @@
                      </div>
                   </div>
                   <div class="d-grid gap-2 mt-4">
-                     <button id="btn-comprar" class="btn btn-primary" type="button">Comprar</button>
+                     
+                     <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#miModal">
+  Comprar ahora
+</button>
                   </div>
                </div>
-         
+         <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Compra realizada</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <dotlottie-wc id="lottie-animation" src="https://lottie.host/9dded255-1f68-48a4-b8d5-0b48a66772e8/cygvl3GJzr.lottie"
+       style="width: 350px;height: 200px;align-self: center; margin-top: 10px " autoplay loop
+       ></dotlottie-wc>
+
+     
+    </div>
+  </div>
+</div>
      
       </main>
       <footer class="bg-primary text-center py-5">
          <p class="mb-0 text-white">&copy; 2025 Ferreteria.</p>
       </footer>
+
+<script type="module">
+  import '@dotlottie/wc';
+</script>
+
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
    </body>
 </html>
