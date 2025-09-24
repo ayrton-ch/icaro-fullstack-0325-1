@@ -29,7 +29,6 @@ Es una tienda online de ferretería donde podés comprar herramientas de manera 
 
 # Introducción Modulo - 2
 
-- **lista de tarea**,
-- **calculadora basica**: Agregar un boton de agregar para que lo sume al carrito y hacer un array lista de los producto y que lo mande usando dom al pagina de comprar y que muestre los producto que quiero compra que haga la suma de todo los producto mas el envio o sin el envio y una accion de que se realizo la compra.
+- **lista de tarea, calculadora basica**: Agregar un boton de agregar para que lo sume al carrito y hacer un array lista de los producto y que lo mande usando dom al pagina de comprar y que muestre los producto que quiero compra que haga la suma de todo los producto mas el envio o sin el envio y una accion de que se realizo la compra.
 
 - **galeria de imagen**: al ver el producto tenga una galeria de fotos
