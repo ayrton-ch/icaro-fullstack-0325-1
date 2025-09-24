@@ -1,3 +1,8 @@
+const logo = document.querySelector("#logo");
+logo.addEventListener("click", function () {
+  location.href = "index.html";
+});
+
 const cont = document.querySelector("#listaCompras");
 const subtotal = document.querySelector("#subtotal");
 const envio = document.querySelector("#envio");
