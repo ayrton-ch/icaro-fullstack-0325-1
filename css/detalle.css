@@ -48,25 +48,16 @@ body {
 
 .container-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5px;
   padding: 5px;
   background-color: var(--white);
-}
-
-.imagen-grid {
-  height: 100%;
-  width: 100%;
-  background-color: #03254c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
 }
 
 .detalle-grid {
   display: grid;
-  min-height: 300px;
+  min-height: 100px;
   grid-template-rows: 50px 70px 1fr;
 }
 
@@ -88,6 +79,22 @@ body {
   font-size: 1.2rem;
 }
 
+.imagen-grid {
+  height: 500px;
+  width: 400px;
+  padding: 10%;
+  transition: transform 0.3s ease;
+  background-color: #03254c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.imagen-grid:hover {
+  transform: scale(1.2);
+}
+
 .galeria-grid {
   padding: 5%;
   display: flex;
@@ -96,13 +103,18 @@ body {
 }
 
 .img-grid {
-  width: auto;
+  width: 80px;
   height: 80px;
-  margin: 10px;
+  margin: 1px;
+  padding: 3%;
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid #ccc;
   background-color: #03254c;
+}
+
+.img-grid:hover {
+  transform: scale(1.1);
 }
 
 /* celular */
@@ -114,7 +126,14 @@ body {
   }
 
   .imagen-grid {
-    border-radius: 5px 5px 0px 0px;
+    height: 300px;
+    width: 300px;
+    padding: 10%;
+  }
+
+  .img-grid {
+    width: 62px;
+    height: 61px;
   }
 }
 
